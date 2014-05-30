@@ -35,7 +35,7 @@ echo $strategy->extract($country); // will print US
 #### Using country validator
 ```php
 $validator = new HtCountryModule\Validator\CountryValidator;
-var_dump($validator->isValid('asdfasfd)); // bool(false)
+var_dump($validator->isValid('asdfasfd')); // bool(false)
 var_dump($validator->isValid('US')); // bool(true)
 ```
 
