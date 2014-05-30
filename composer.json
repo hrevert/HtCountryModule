@@ -25,12 +25,14 @@
     "require-dev": {
         "zendframework/zend-servicemanager": "~2.2",
         "zendframework/zend-modulemanager": "~2.2",
-        "zendframework/zend-stdlib": "~2.2"
+        "zendframework/zend-stdlib": "~2.2",
+        "zendframework/zend-validator": "~2.2"
     },
     "suggest": {
         "zendframework/zend-servicemanager": "To use the services provided by this module",
         "zendframework/zend-modulemanager": "If you want to use it as a Zend Framework 2 module",
-        "zendframework/zend-stdlib": "To use hydrator strategy provided by this module"
+        "zendframework/zend-stdlib": "To use hydrator strategy provided by this module",
+        "zendframework/zend-validator": "If you want to use it as a country validator"
     },
     "autoload": {
         "psr-4": {

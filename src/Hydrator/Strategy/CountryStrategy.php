@@ -5,6 +5,9 @@ use Zend\Stdlib\Hydrator\Strategy\StrategyInterface;
 use Phine\Country\Loader;
 use Phine\Country\CountryInterface;
 
+/**
+ * Hydrator strategy to convert ISO 3166-1 alpha-2 to instance of "Phine\Country\CountryInterface" and vice versa
+ */
 class CountryStrategy implements StrategyInterface
 {
     /**
