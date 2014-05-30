@@ -29,7 +29,7 @@ class Module implements
             ],
             'validators' => [
                 'factories' => [
-                    'CountryValidator' => 'HtCountryModule\Factory\Validator\CountryValidator',
+                    'CountryValidator' => 'HtCountryModule\Factory\Validator\CountryValidatorFactory',
                 ]
             ]
         ];
@@ -43,7 +43,7 @@ class Module implements
         return [
             'Zend\Loader\StandardAutoloader' => [
                 'namespaces' => [
-                    __NAMESPACE__ => __DIR__ . '/src',
+                    __NAMESPACE__ => __DIR__,
                 ],
             ],
         ];
