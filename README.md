@@ -1,5 +1,11 @@
 HtCountryModule
 ===============
+[![Master Branch Build Status](https://travis-ci.org/hrevert/HtCountryModule.svg?branch=master)](http://travis-ci.org/hrevert/HtCountryModule)
+[![Latest Stable Version](https://poser.pugx.org/hrevert/ht-country-module/v/stable.png)](https://packagist.org/packages/hrevert/ht-country-module)
+[![Total Downloads](https://poser.pugx.org/hrevert/ht-country-module/downloads.png)](https://packagist.org/packages/hrevert/ht-country-module)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/hrevert/HtCountryModule/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/hrevert/HtCountryModule/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/hrevert/HtCountryModule/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/hrevert/HtCountryModule/?branch=master)
+
 
 A Zend Framework 2 module for country and subdivision data. This module integrates [lib-country](https://github.com/phine/lib-country) with [Zend Framework 2](https://github.com/zendframework/zf2).
 
