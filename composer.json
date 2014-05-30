@@ -35,9 +35,6 @@
     "autoload": {
         "psr-4": {
             "HtCountryModule\\": "src/"
-        },
-        "classmap": [
-            "./Module.php"
-        ]
+        }
     }
 }

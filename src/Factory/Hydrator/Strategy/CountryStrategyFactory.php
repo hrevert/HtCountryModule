@@ -3,7 +3,7 @@ namespace HtCountryModule\Factory\Hydrator\Strategy;
 
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
-use Application\Stdlib\Hydrator\Strategy\CountryStrategy;
+use HtCountryModule\Hydrator\Strategy\CountryStrategy;
 
 class CountryStrategyFactory implements FactoryInterface
 {

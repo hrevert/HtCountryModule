@@ -1,46 +1,6 @@
 <?php
-namespace HtCountryModule;
-
-use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
-use Zend\ModuleManager\Feature\ConfigProviderInterface;
-
-class Module implements 
-    AutoloaderProviderInterface,
-    ConfigProviderInterface
-{
-    /**
-     * {@inheritDoc}
-     */
-    public function getConfig()
-    {
-        return [
-            'services' => [
-                'invokables' => [
-                    'Phine\Country\Loader\Loader' => 'Phine\Country\Loader\Loader',
-                ],
-                'aliases' => [
-                    'CountryLoader' => 'Phine\Country\Loader\Loader',
-                ]                
-            ],
-            'hydrators' => [
-                'invokables' => [
-                    'CountryStrategy' => 'Application\Factory\Hydrator\Strategy\CountryStrategyFactory',
-                ]
-            ]
-        ];
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getAutoloaderConfig()
-    {
-        return [
-            'Zend\Loader\StandardAutoloader' => [
-                'namespaces' => [
-                    __NAMESPACE__ => __DIR__ . '/src',
-                ],
-            ],
-        ];
-    }
-}
+/**
+ * This file is placed here for compatibility with Zendframework 2's ModuleManager.
+ * It allows usage of this module even without composer.
+ */
+require_once __DIR__ . '/src/Module.php';
