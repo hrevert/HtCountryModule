@@ -4,7 +4,7 @@ namespace HtCountryModule;
 use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
 use Zend\ModuleManager\Feature\ConfigProviderInterface;
 
-class Module implements 
+class Module implements
     AutoloaderProviderInterface,
     ConfigProviderInterface
 {
@@ -20,11 +20,16 @@ class Module implements
                 ],
                 'aliases' => [
                     'CountryLoader' => 'Phine\Country\Loader\Loader',
-                ]                
+                ]
             ],
             'hydrators' => [
-                'invokables' => [
+                'factories' => [
                     'CountryStrategy' => 'Application\Factory\Hydrator\Strategy\CountryStrategyFactory',
+                ]
+            ],
+            'validators' => [
+                'factories' => [
+                    'CountryValidator' => 'HtCountryModule\Factory\Validator\CountryValidator',
                 ]
             ]
         ];

@@ -31,7 +31,7 @@ class CountryStrategy implements StrategyInterface
     /**
      * Loads country from ISO 3166-1 alpha-2
      *
-     * @param string $alpha2Code
+     * @param  string           $alpha2Code
      * @return CountryInterface
      */
     public function hydrate($alpha2Code)
@@ -42,7 +42,7 @@ class CountryStrategy implements StrategyInterface
     /**
      * Gets ISO 3166-1 alpha-2 of a country
      *
-     * @param CountryInterface $country
+     * @param  CountryInterface                   $country
      * @return string
      * @throws Exception\InvalidArgumentException
      */

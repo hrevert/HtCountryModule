@@ -41,7 +41,7 @@ class CountryValidator extends AbstractValidator
     /**
      * Sets country loader
      *
-     * @param Loader\LoaderInterface $loader
+     * @param  Loader\LoaderInterface $loader
      * @return self
      */
     public function setLoader(Loader\LoaderInterface $loader)
@@ -64,7 +64,7 @@ class CountryValidator extends AbstractValidator
 
         return $this->loader;
     }
-    
+
     /**
      * Returns true if $value is valid ISO 3166-1 alpha-2 or instance of Phine\Country\CountryInterface
      *
@@ -79,15 +79,17 @@ class CountryValidator extends AbstractValidator
 
         if (!is_string($value)) {
             $this->error(static::INVALID);
+
             return false;
         }
 
         $country = $this->getLoader()->loadCountry($value);
         if (!$country instanceof CountryInterface) {
             $this->error(static::COUNTRY_NOT_FOUND);
+
             return false;
         }
 
         return true;
-    }    
+    }
 }

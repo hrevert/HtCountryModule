@@ -15,7 +15,7 @@ class CountryValidatorTest extends \PHPUnit_Framework_TestCase
         $validator = new CountryValidator($loader);
         $this->assertInstanceOf('Phine\Country\Loader\Loader', $validator->getLoader());
     }
-    
+
     public function testIsValid()
     {
         $loader = new Loader;
@@ -25,5 +25,5 @@ class CountryValidatorTest extends \PHPUnit_Framework_TestCase
         $this->assertTrue($validator->isValid($loader->loadCountry('NP')));
         $this->assertFalse($validator->isValid('asfdasf'));
         $this->assertFalse($validator->isValid([]));
-    }    
+    }
 }
