@@ -1,0 +1,43 @@
+{
+    "name": "hrevert/ht-country-module",
+    "description": "A Zend Framework 2 module for country and subdivision data.",
+    "type": "library",
+    "keywords": [
+        "zf2",
+        "module",
+        "zendframework",
+        "country",
+        "geography",
+        "location"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/ojhaujjwal/HtCountryModule",
+    "authors": [
+        {
+            "name": "Hrevert Technologies",
+            "email": "info@hrevert.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "phine/country": "~1.0"
+    },
+    "require-dev": {
+        "zendframework/zend-servicemanager": "~2.2",
+        "zendframework/zend-modulemanager": "~2.2",
+        "zendframework/zend-stdlib": "~2.2"
+    },
+    "suggest": {
+        "zendframework/zend-servicemanager": "To use the services provided by this module",
+        "zendframework/zend-modulemanager": "If you want to use it as a Zend Framework 2 module",
+        "zendframework/zend-stdlib": "To use hydrator strategy provided by this module"
+    },
+    "autoload": {
+        "psr-4": {
+            "HtCountryModule\\": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
+    }
+}
