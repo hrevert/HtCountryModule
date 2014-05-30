@@ -32,7 +32,7 @@ $country = $strategy->hydrate('US');
 echo $strategy->extract($country); // will print US
 ```
 
-#### Using country validator
+### Using country validator
 ```php
 $validator = new HtCountryModule\Validator\CountryValidator;
 var_dump($validator->isValid('asdfasfd')); // bool(false)
