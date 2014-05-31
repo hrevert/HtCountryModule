@@ -20,11 +20,9 @@ class Module implements
                 ],
                 'aliases' => [
                     'CountryLoader' => 'Phine\Country\Loader\Loader',
-                ]
-            ],
-            'hydrators' => [
+                ],
                 'factories' => [
-                    'CountryStrategy' => 'HtCountryModule\Factory\Hydrator\Strategy\CountryStrategyFactory',
+                    'HtCountryModule\Hydrator\Strategy\CountryStrategy' => 'HtCountryModule\Factory\Hydrator\Strategy\CountryStrategyFactory',
                 ]
             ],
             'validators' => [

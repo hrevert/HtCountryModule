@@ -8,12 +8,12 @@ use HtCountryModule\Hydrator\Strategy\CountryStrategy;
 class CountryStrategyFactory implements FactoryInterface
 {
     /**
-     * @param ServiceLocatorInterface $hydrators
+     * @param ServiceLocatorInterface $serviceLocator
      *
      * @return CountryStrategy
      */
-    public function createService(ServiceLocatorInterface $hydrators)
+    public function createService(ServiceLocatorInterface $serviceLocator)
     {
-        return new CountryStrategy($hydrators->getServiceLocator()->get('Phine\Country\Loader\Loader'));
+        return new CountryStrategy($serviceLocator->get('Phine\Country\Loader\Loader'));
     }
 }
