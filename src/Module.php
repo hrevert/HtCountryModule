@@ -14,7 +14,7 @@ class Module implements
     public function getConfig()
     {
         return [
-            'services' => [
+            'service_manager' => [
                 'invokables' => [
                     'Phine\Country\Loader\Loader' => 'Phine\Country\Loader\Loader',
                 ],
