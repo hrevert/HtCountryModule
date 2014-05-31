@@ -24,7 +24,7 @@ class Module implements
             ],
             'hydrators' => [
                 'factories' => [
-                    'CountryStrategy' => 'Application\Factory\Hydrator\Strategy\CountryStrategyFactory',
+                    'CountryStrategy' => 'HtCountryModule\Factory\Hydrator\Strategy\CountryStrategyFactory',
                 ]
             ],
             'validators' => [
