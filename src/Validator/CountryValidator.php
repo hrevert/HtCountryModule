@@ -10,14 +10,14 @@ use Phine\Country\CountryInterface;
  */
 class CountryValidator extends AbstractValidator
 {
-    const INVALID           = 'countryInvalid';
-    const COUNTRY_NOT_FOUND   = 'countryNotFound';
+    const INVALID               = 'countryInvalid';
+    const COUNTRY_NOT_FOUND     = 'countryNotFound';
 
     /**
      * @var array
      */
     protected $messageTemplates = array(
-        self::INVALID            => 'Invalid type given. String expected',
+        self::INVALID               => 'Invalid type given. String expected',
         self::COUNTRY_NOT_FOUND     => 'Country %value% was not found',
     );
 
@@ -73,6 +73,8 @@ class CountryValidator extends AbstractValidator
      */
     public function isValid($value)
     {
+        $this->setValue($value);
+
         if ($value instanceof CountryInterface) {
             return true;
         }
