@@ -40,5 +40,5 @@ var_dump($validator->isValid('US')); // bool(true)
 ```
 
 ## Installation
-* Add `"hrevert/ht-country-module": "0.0.*"` to composer.json and run `php composer.phar update`
+* Add `"hrevert/ht-country-module": "1.0.*"` to composer.json and run `php composer.phar update`
 * Register `HtCountryModule` as module in `config/application.config.php`
