@@ -36,6 +36,7 @@ class CountryValidator extends AbstractValidator
         if ($loader !== null) {
             $this->setLoader($loader);
         }
+        parent::__construct();
     }
 
     /**
