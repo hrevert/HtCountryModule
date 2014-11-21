@@ -18,15 +18,16 @@ Please read the docs of [lib-country](https://github.com/phine/lib-country) firs
 ### Using Services
 ```php
 // From ServiceManager
-/** @var Phine\Country\Loader\Loader */
+/** @var Phine\Country\Loader\Loader $countryLoader */
 $countryLoader = $serviceManager->get('CountryLoader');
 ```
 
 ### Using hydrator strategy
 ```php
 $strategy = new HtCountryModule\Hydrator\Strategy\CountryStrategy;
+// or $strategy = $serviceManager->get('HtCountryModule\Hydrator\Strategy\CountryStrategy');
 
-/** @var Phine\Country\Country */
+/** @var Phine\Country\Country $country */
 $country = $strategy->hydrate('US');
 
 echo $strategy->extract($country); // will print US
@@ -35,6 +36,7 @@ echo $strategy->extract($country); // will print US
 ### Using country validator
 ```php
 $validator = new HtCountryModule\Validator\CountryValidator;
+// or $validator = $serviceManager->get('ValidatorManager')->get('CountryValidator');
 var_dump($validator->isValid('asdfasfd')); // bool(false)
 var_dump($validator->isValid('US')); // bool(true)
 ```
